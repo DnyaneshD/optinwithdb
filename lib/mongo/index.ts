@@ -15,9 +15,10 @@ let globalWithMongo = global as typeof globalThis & {
 if(process.env.NODE_ENV !== "production"){
     if(!globalWithMongo._mongoClientPromise){
         globalWithMongo._mongoClientPromise = client.connect();
-    } else {
-        clientPromise = client.connect();
-    }
+    } 
+    clientPromise = globalWithMongo._mongoClientPromise;
+} else {
+    clientPromise = client.connect();
 }
 
 export default clientPromise;

@@ -13,7 +13,7 @@ async function init() {
 
         movies = await db.collection('movies');
     } catch (e) {
-        
+        console.log(" Error while init ", e);
     }
 }; 
 
@@ -31,8 +31,8 @@ export async function getMovies(){
             .limit(20)
             .map((movie: any)=> ({ ...movie, _id: movie._id.toString() }))
             .toArray();
-
-        return { movies: result };
+          
+            return { movies: result };    
     } catch (error) {
         console.log(error);
         return { error: " Error while fetching movies" }
