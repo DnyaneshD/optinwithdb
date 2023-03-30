@@ -12,12 +12,19 @@
     "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "i": "^0.3.7",
     "mongodb": "^5.1.0",
     "next": "13.2.4",
     "react": "18.2.0",
+    "react-content-loader": "^6.1.0",
     "react-dom": "18.2.0",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-dropzone": "^11.4.2",
+    "react-hook-form": "^7.22.1",
     "typescript": "5.0.2"
   }
 }

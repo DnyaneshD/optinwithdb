@@ -1,0 +1,40 @@
+
+.cta{
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px 14px 5px 15px;
+    padding:12px 30px;
+    transition: all .2s ease-in-out;
+    border:none;
+    outline:none;
+}
+
+.cta:hover{
+    opacity: .9;
+    transition: all .1s ease-in-out;
+}
+
+.alternative-cta{
+    padding:15px 20px;
+}
+
+.alternative-cta img{
+    margin-right:15px;
+}
+
+
+
+.back-cta{
+    margin-bottom:25px;
+    padding:5px 15px;
+    position:relative;
+    top:-20px;
+    background-color:#ffac24;
+}
+.back-cta:before{
+    content:'←';
+    position:relative;
+    top:1px;
+    margin-right:10px;
+}

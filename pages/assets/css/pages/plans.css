@@ -1,0 +1,16 @@
+
+section.banner{
+    padding-top:130px;
+}
+
+section.plans{
+    margin-top:80px;
+}
+
+section.plans .free-selection{
+    text-decoration: underline;
+}
+
+section.plans .free-selection:hover{
+    opacity: .7;
+}

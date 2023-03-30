@@ -1,0 +1,23 @@
+section.banner{
+    background-color: #FAFAFA;
+    border:1px solid #E2E2E2;
+    padding:40px 0px;
+}
+
+section.banner .wrap{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+section.banner .wrap img{
+    align-self: center;
+    width: 25px;
+    margin-bottom:15px;
+}
+
+section.banner h2{
+    font-size:22px;
+    margin-bottom:5px;
+}

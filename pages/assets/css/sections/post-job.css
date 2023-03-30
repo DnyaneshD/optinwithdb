@@ -1,0 +1,163 @@
+body.post-a-job header .main-cta{
+    display:none
+}
+
+section.post-job{
+    padding-top:130px;
+}
+
+section.post-job{
+    background-image: linear-gradient(180deg, #FFFFFF 5%, #F3F3F3 100%);
+}
+
+section.post-job .heading h1{
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+section.post-job .content{
+    display:flex;
+    flex-flow:row;
+    justify-content: space-between;
+}
+section.post-job .highlighted-box > div{
+    
+}
+
+section.post-job .content form{
+    max-width: 660px;
+    width: 100%;
+    border:1px solid #DFDFDF;
+    padding:45px;
+}
+
+section.post-job .content form .row{
+    margin-bottom:10px;
+}
+
+section.post-job .content form h2{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+section.post-job .content form .radio{
+    margin:5px 0px;
+}
+section.post-job .content form .radio label{
+    transition: all .04s ease-in-out;
+    position:relative;
+    top:-1px;
+}
+
+section.post-job .content form .radio label:hover{
+    color:#f3b045;
+}
+
+section.post-job .content form .full{
+    width: 100%;
+    flex-flow:wrap;
+}
+
+section.post-job .content form .half{
+    width: 50%;
+}
+
+section.post-job .content form p.small-p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    margin:0px 0px 10px 0px;
+}
+
+section.post-job .content form div p{
+    text-align: left;
+    margin:15px 0px;
+    color:#7B7A8B;
+    font-weight: 700;
+    font-family: 'PT Serif';
+}
+section.post-job .content form > p{
+    margin:-10px 0px 20px 0px;
+    opacity: .8;
+}
+
+section.post-job .content form p.mandatory::before{
+    content: "*";
+    font-family: 'Nunito';
+    position:relative;
+    top:2px;
+    right:5px;
+    font-size:13px;
+    color:#D54755;
+}
+section.post-job .content form .job-type{
+    width: 50%;
+    flex-flow:row wrap;
+    display:flex;
+}
+section.post-job .content form .job-type > div{
+    width: 130px;
+    margin-bottom:5px;
+}
+
+section.post-job .content form .job-title input{
+    width: 100%;
+}
+
+section.post-job .content form .job-category select{
+    width: 80%;
+}
+
+section.post-job .content form .job-description textarea{
+    width: 100%;
+    max-width: 707px;
+    height:280px;
+    max-height: 600px;
+}
+section.post-job .content form .company-description textarea{
+    height: 140px;
+}
+section.post-job .content form .where-to-apply input{
+    width: 100%;
+}
+
+section.post-job .content form .geo-locations{
+    display:flex;
+    flex-flow: row;
+}
+
+section.post-job .content form .geo-locations .split{
+    margin-right:80px;
+}
+section.post-job .content form .geo-locations .split:last-of-type{
+    margin-right:0px;
+}
+
+section.post-job .content form .other-geo input{
+    width: 50%;
+}
+
+section.post-job .content form .cta-holder{
+    display:flex;
+    justify-content: flex-end;
+    margin:20px 0px 0px 0px;
+}
+section.post-job .content form .cta-holder .review-cta{
+    text-decoration: underline;
+    font-weight: 700;
+    background:none;
+    border:none;
+
+}
+section.post-job .content form .cta-holder span{
+    margin:0px 30px;
+}
+section.post-job .content form .company-details{
+    justify-content: space-between;
+}
+section.post-job .content form .company-details .half{
+    width: 46%;
+}
+section.post-job .content form .company-details .half input{
+    width: 100%;
+    box-sizing: border-box;
+}

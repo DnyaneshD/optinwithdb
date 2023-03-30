@@ -1,0 +1,165 @@
+section.listing{
+    padding-top: 0px;
+    background-image: linear-gradient(180deg, #FFFFFF 5%, #F3F3F3 100%);
+}
+
+
+section.listing .filter ul{
+    margin-top:20px;
+    display:flex;
+    flex-flow: row wrap;
+}
+section.listing .filter ul li{
+    display:flex;
+    background:#f5f3f3;
+    margin:6px 6px 3px 0px;
+    border-radius: 4px 8px 4px 8px;
+    transition: all .1s ease-in-out;
+}
+section.listing .filter ul li a{
+    padding:10px 15px;
+}
+section.listing .filter ul li:hover{
+    background:#FFF6E5;
+}
+
+section.listing .filter ul li.active{
+    background:#FFF6E5;
+    
+}
+
+
+section.listing .list{
+    margin-top:50px;
+}
+
+section.listing .list ul{
+    margin-top:20px;
+}
+
+
+section.listing .list ul li{
+    background:#ffffff;
+    position: relative;
+    margin:10px 0px;
+    border-radius: 0px 7px 0px 7px;
+    border:1px solid #E8E8E8;
+}
+
+
+
+
+section.listing .list ul li.founder{
+    background:#eef7ff;
+}
+
+section.listing .list ul li.founder-level-two{
+    background:#dbe9f5;
+}
+
+section.listing .list ul li.featured,
+section.listing .list ul li.highlighted{
+    border:1px solid #FFDE63;
+}
+
+
+section.listing .list ul li a{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    max-height: 130px;
+    padding: 0px 44px;
+}
+
+section.listing .list ul li a .company-logo{
+    max-width: 70px;
+    width: 70px;
+    margin-right:44px;
+}
+
+section.listing .list ul li a .company-logo img{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+section.listing .list ul li .badge{
+    display:flex;
+    justify-content: center;    
+    background:#ffffff;     
+    width: 35px;
+    height: 35px;
+    border:1px solid #C5C5C5;
+    border-radius: 255px;
+    position:absolute;
+    left:-15px;
+    top:43px;
+}
+
+
+section.listing .list ul li.founder-level-two .badge{
+    width: 39px;
+    height: 39px;
+    background:#3F3D56;
+    left:-20px;
+    top:39px;
+}
+section.listing .list ul li .badge img{
+    align-self:center;
+    width: 21px;
+}
+
+
+section.listing .list ul li a .job-description{
+    width: 700px;
+    display:flex;
+    flex-flow: column;
+}
+section.listing .list ul li a .job-description h3{
+    margin:10px 0px 13px 0px;
+    font-family:'Nunito';
+    font-weight: 700;
+    font-size:18px;
+}
+section.listing .list ul li a .job-description .job-details{
+    display:flex;
+    flex-flow:row;
+}
+section.listing .list ul li a .job-description .job-details .item{
+    margin-right:20px;
+    display:flex;
+    align-items: center;
+}
+section.listing .list ul li a .job-description .job-details .item img{
+    margin-right:5px;
+}
+section.listing .list ul li a .posting-status{
+    display:flex;
+    width: 120px;
+    justify-content: flex-end;
+}
+
+section.listing .list ul li a .posting-status .featured{
+    background:#FFDE63;
+    padding:10px 26px;
+    border-radius: 21px 0px 21px 0px;
+    font-weight:700;
+}
+section.listing .list ul li a .posting-status .date{
+    font-weight: 700;
+}
+
+section.listing .listing-navigation{
+    display:flex;
+    flex-flow:row;
+    justify-content: flex-end;
+    align-items:center;
+    margin-top:20px;
+}
+
+
+section.listing .listing-navigation span{
+    margin-right:10px;
+}

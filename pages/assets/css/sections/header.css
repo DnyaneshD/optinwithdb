@@ -1,0 +1,39 @@
+header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index:10;
+    padding:20px 0px;
+}
+
+header .big-wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display:flex;
+    flex-flow: row;
+}
+
+header nav ul li{
+    margin:0px 10px;
+}
+
+header nav ul li a{
+    border-bottom:1px solid rgba(255,255,255,0);
+    padding-bottom:3px;
+  
+}
+
+header nav ul li a:hover{
+    border-bottom:1px solid #3F3D56;
+    transition: all .1s ease-in-out;
+}
+
+header.not-index{
+    border-bottom:1px solid #E2E2E2;
+    background:#ffffff;
+}

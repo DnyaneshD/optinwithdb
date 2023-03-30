@@ -1,0 +1,52 @@
+section.hero{
+    background:#FFF6E5;
+    padding:70px 0px 30px 0px;
+}
+section.hero .waves{
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+
+
+
+
+section.hero .wrap{
+    position:relative;
+    display:flex;
+    justify-content: right;
+}
+
+section.hero .wrap > img{
+    margin-right:-50px;
+}
+
+section.hero .wrap .content{
+    position:absolute;    
+    left:0px;
+    top:0px;
+    max-width: 420px;
+    z-index:9;
+}
+
+section.hero .wrap .content h1{
+    margin:60px 0px 20px 0px;
+}
+
+section.hero .wrap .content > p{
+    font-size:20px;
+}
+
+section.hero .wrap .content .founder-promo{
+    margin-top:40px;
+}
+
+section.hero .wrap .content .founder-promo .cta{
+    margin:10px 0px;
+}
+
+section.hero .wrap .content .founder-promo > p b{
+    font-size:14px;
+    opacity: .8;
+}

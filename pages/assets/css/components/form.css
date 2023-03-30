@@ -1,0 +1,100 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ABA9B4;
+    opacity: 1; /* Firefox */
+}
+
+.upload-image-container,
+form input[type='text'],
+form select,
+form textarea{
+    background-color: #FAFAFA;
+    border: 1px solid #E3E3E3;
+    border-radius: 7px;
+    font-size:15px;
+    padding:13px 20px; 
+    outline:none;
+    appearance: none;
+    
+}
+
+form label{
+    cursor: pointer;
+}
+
+form select{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='17px' height='17px' viewBox='0 0 17 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EGroup 41%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Post-a-job-Step-1' transform='translate(-716.000000, -593.000000)' fill='%23D8D8D8' stroke='%23979797'%3E%3Cg id='Group-14' transform='translate(478.000000, 541.000000)'%3E%3Cg id='Group-8-Copy-3' transform='translate(0.000000, 41.000000)'%3E%3Cg id='Group-7' transform='translate(246.500000, 19.500000) rotate(-45.000000) translate(-246.500000, -19.500000) translate(241.000000, 14.000000)'%3E%3Cg id='Group-41' transform='translate(-0.000000, 0.000000)'%3E%3Cline x1='1' y1='0' x2='1' y2='10' id='Line'%3E%3C/line%3E%3Cline x1='6' y1='5' x2='6' y2='15' id='Line-Copy' transform='translate(6.000000, 10.000000) rotate(-90.000000) translate(-6.000000, -10.000000) '%3E%3C/line%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: right 20px center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+
+form textarea{
+    padding:20px;
+}
+
+form input[type='radio']{
+    margin:0px;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+.error{
+    color:#ef4958;
+}
+
+/* Upload image feature */
+
+.upload-image-container{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    border-radius:15px;
+    padding:15px 0px;
+    border-style:dashed;
+    cursor:pointer;
+    transition:all .1s ease-in-out;
+}
+.upload-image-container p{
+    margin-top:0px !important;
+}
+
+.upload-image-container .dropzone{
+    display: flex;
+    flex-flow: column;
+}
+.upload-image-container:hover{
+    opacity: .8;
+}
+.upload-image-container p{
+    font-family: 'Nunito' !important;
+    opacity: .7;
+    font-weight:400 !important;
+}
+
+.upload-image-container img{
+    max-width: 70px;
+    max-height: 70px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    
+}
+.upload-image-container aside{
+    align-self: center;
+    margin-bottom:10px;
+}
+.upload-image-container aside div{
+    height: 100%;
+    width: 70px;
+    height: 70px;
+    display:flex;
+    background:red;
+    border-radius:8px;
+    background:#ffffff;
+    border:1px solid #e3e3e3;
+    align-self: center;
+    overflow:hidden;
+    align-items: center;
+    padding:3px;
+}

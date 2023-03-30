@@ -1,0 +1,45 @@
+.highlighted-box .badge{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background:#ffffff;
+    border:1px solid #C5C5C5;
+    width: 39px;
+    height: 39px;
+    border-radius: 255px;
+    position:relative;
+    top:-20px;
+}
+.highlighted-box .badge img{
+    width: 21px;
+}
+.highlighted-box{
+    display:flex;
+    flex-flow:column wrap;
+    position:relative;
+    background:#ffffff;
+    border:1px solid #FFD288;
+    border-radius: 10px 42px 10px 42px;
+    padding:0px 0px 20px 0px;
+}
+.highlighted-box > div{
+    display:flex;
+    flex-flow:column wrap;
+    margin-bottom:20px;
+    align-items: center;
+}
+
+.highlighted-box > div p{
+    width: 100%;
+    margin:3px;
+    text-align: center;
+}
+
+.highlighted-box > div a.read-more{
+    font-weight:700;
+    text-decoration: underline;
+}
+.highlighted-box > div a.read-more:hover{
+    opacity: .8;
+}

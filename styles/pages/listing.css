@@ -1,0 +1,48 @@
+section.full-job-listing{
+    padding-top:160px;
+    background-image: linear-gradient(180deg, #FAFAFA 30%, #F3F3F3 100%);
+}
+
+section.full-job-listing .wrap{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+section.full-job-listing .wrap .content{
+    width: 100%;
+    max-width: 640px;
+}
+
+
+section.full-job-listing .wrap .content .heading > p{
+    opacity: .8;
+}
+
+section.full-job-listing .wrap .content .heading{
+    margin-bottom:40px;
+}
+section.full-job-listing .wrap .content .heading h1{
+    font-size:24px;
+    margin:5px 0px 15px 0px;
+}
+
+section.full-job-listing .wrap .content .heading .job-details{
+    display:flex;
+}
+section.full-job-listing .wrap .content .heading .job-details .item{
+    display:flex;
+    flex-flow: row;
+    margin-right:20px;
+}
+section.full-job-listing .wrap .content .heading .job-details .item img{
+    margin-right:7px;
+
+    align-items: center;
+}
+
+section.full-job-listing .sidebar{
+    width: 300px;
+}
+

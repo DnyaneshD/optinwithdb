@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="69px" viewBox="0 0 1920 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <path d="M0,29.9722837 C74.747093,29.8433684 168.41376,24.1429555 281,12.8710452 C676,-26.6755687 713,35.8508344 1021.5,54.0209002 C1330,72.1909661 1443.73165,48.8881481 1738,12.8710452 C1819,2.95701508 1879.66667,8.65742789 1920,29.9722837 L1920,69 L0,69 L0,29.9722837 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(3.000000, -592.000000)">
+            <g id="Rectangle" transform="translate(-3.000000, 592.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect mask="url(#mask-2)" x="0" y="-2" width="1920" height="71"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

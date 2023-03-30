@@ -1,11 +1,11 @@
 import React from "react";
 
-import Listing from "./components/Listing.jsx";
-import Cta from "./components/Cta.jsx";
+import Listing from "../components/Listing.jsx";
+import Cta from "../components/Cta.jsx";
 
-import imageHero from './assets/img/sections/hero.svg';
-import imageWaveHero from './assets/img/sections/wave-hero.svg';
-import iconFounderCrown from './assets/img/icons/founder-crown.svg';
+import imageHero from '../assets/img/sections/hero.svg';
+import imageWaveHero from '../assets/img/sections/wave-hero.svg';
+import iconFounderCrown from '../assets/img/icons/founder-crown.svg';
 const Home = () => {
     return (
         <React.Fragment>

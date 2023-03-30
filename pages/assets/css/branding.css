@@ -1,0 +1,25 @@
+span,div,body,p,a,li,b,strong,
+h1,h2,h3,h4,h5,h6{
+    color:#3F3D56;
+}
+
+
+.main-cta{
+    background: #EF4958;
+}
+.alternative-cta{
+    background:#2F2E41;
+}
+
+
+.main-cta ,
+.main-cta p,
+.main-cta span,
+.alternative-cta,
+.alternative-cta p,
+.alternative-cta span{
+    color:#ffffff;
+}
+
+
+

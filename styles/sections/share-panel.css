@@ -1,0 +1,24 @@
+section.share-panel{
+    background:#F1F0EB;
+    border-top:1px solid #F0E3CA;
+    border-bottom:1px solid #F0E3CA;
+    padding:30px 0px;
+}
+
+section.share-panel .wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.share-panel .wrap .social-media{
+    display:flex;
+    flex-flow: row;
+}
+
+section.share-panel .wrap .social-media a{
+    margin-left:20px;
+}
+section.share-panel .wrap .social-media a:hover img{
+    opacity: .8;
+}

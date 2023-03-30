@@ -1,0 +1,86 @@
+
+section.company-about .content{
+    display:flex;
+    flex-flow: row;
+    padding:0px 50px;
+    margin:20px 0px 50px 0px;;
+}
+
+
+
+section.company-about .company-logo{
+    margin-top:20px
+}
+
+section.company-about .content .details{
+    border-right:1px solid #DFDFDF;
+    margin-right:60px;
+    padding-right:100px;
+}
+
+
+section.company-about .content .details .desc{
+    margin-bottom:30px;
+}
+
+section.company-about .content .details .desc p,
+section.company-about .content .details .desc a{
+    text-align: left;
+    margin:0px 0px 5px 0px;
+}
+section.company-about .content .details .desc a{
+    font-weight: 700;
+    text-decoration: underline;
+    color:#EF4958;
+}
+section.company-about .content .details .desc a:hover{
+    opacity: .8;
+}
+section.company-about .content .about{
+    align-self:flex-start;    
+} 
+
+/* Limit all headings to be the same size to reduce error */
+section.company-about .content .about h1,
+section.company-about .content .about h2,
+section.company-about .content .about h3,
+section.company-about .content .about h4,
+section.company-about .content .about h5,
+section.company-about .content .about h6{
+    font-size:20px;
+    margin:0px 0px 10px 0px;
+}
+
+section.company-about .content .about p{
+    text-align: left;
+    margin:0px 0px 20px 0px;
+}
+
+section.company-about .content .about p:last-of-type{
+    margin-bottom:0px;
+}
+
+section.company-about .wrap{
+    border:1px solid #DFDFDF;
+}
+section.company-about .back-button-wrap{
+    border:none;
+}
+
+section.company-about .founder{
+    border:1px solid #FFAC24;
+}
+
+section.company-about .founder .content .details{
+    border-right:1px solid #FFDCA1;
+}
+section.company-about .wrap .badge{
+    opacity: 0;
+}
+section.company-about .founder .badge{
+    opacity: 1;
+}
+
+section.company-about .founder-level-two .badge{
+    background: #3F3D56;
+}

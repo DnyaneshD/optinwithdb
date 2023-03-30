@@ -1,0 +1,81 @@
+.sidebar{
+    width: 300px;
+}
+
+.sidebar .steps{
+    margin:40px 0px;
+}
+.sidebar .steps h2{
+    margin-bottom:8px;
+}
+.sidebar .steps h2:last-of-type{
+    margin-bottom:0px;
+}
+.sidebar .steps h2,
+.sidebar .steps h2 span{
+    font-size:22px;
+    color:#d8d8d8;
+}
+
+.sidebar .steps h2.active{
+    color:#2F2E41;
+}
+.sidebar .steps h2.active span{
+    color:#FECC7A;
+}
+
+
+.sidebar .summary{
+    justify-content: flex-start;
+    padding:35px 27px;
+}
+
+.sidebar .summary > h3{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+
+.sidebar .summary h4{
+    font-size:18px;
+    margin-bottom:15px;
+}
+.sidebar .summary .desc {
+    display:flex;
+    align-items: flex-start;
+}
+.sidebar .summary .desc .item p{
+    margin:0px 0px 5px 0px;
+    text-align: left;
+}
+.sidebar .summary .desc .item{
+    display:flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.sidebar .summary .tax{
+    padding:10px 0px;
+    margin:10px 0px;
+    border-top:1px solid #E3E3E3;
+    border-bottom:1px solid #E3E3E3;
+}
+
+.sidebar .summary .total{
+    margin-top:10px;
+    justify-content: space-between;
+}
+.sidebar .summary .total span{
+    font-size:22px;
+    font-weight: 700;
+}
+
+.sidebar .summary .cta-holder{
+    display:flex;
+    margin:10px 0px 0px 0px;
+}
+.sidebar .summary .cta-holder .cta{
+    align-self: flex-end;
+}
