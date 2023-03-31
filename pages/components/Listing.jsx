@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-
-import iconFounderLevelOne from '../assets/img/icons/founder-crown.svg';
 import iconLocation from '../assets/img/icons/icon-location.svg';
 import iconTime from '../assets/img/icons/icon-time.svg';
-import iconSalary from '../assets/img/icons/icon-salary.svg';
-// import api from "../utils/api.jsx";
 
-// temp - remove later
-import logoHotJar from '../assets/img/temp/hotjar.svg';
 
 const Heading = () => {
     return (

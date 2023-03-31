@@ -19,6 +19,7 @@
     "i": "^0.3.7",
     "mongodb": "^5.1.0",
     "next": "13.2.4",
+    "next-images": "^1.8.4",
     "react": "18.2.0",
     "react-content-loader": "^6.1.0",
     "react-dom": "18.2.0",

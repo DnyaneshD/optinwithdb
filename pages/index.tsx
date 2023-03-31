@@ -6,9 +6,12 @@ import Cta from "./components/Cta.jsx";
 import imageHero from './assets/img/sections/hero.svg';
 import imageWaveHero from './assets/img/sections/wave-hero.svg';
 import iconFounderCrown from './assets/img/icons/founder-crown.svg';
+import Header from "./components/Header";
+
 const Home = () => {
     return (
         <React.Fragment>
+            <Header />
             <section className="hero">
             <div className="wrap">
                 <img src={imageHero} alt="#" />

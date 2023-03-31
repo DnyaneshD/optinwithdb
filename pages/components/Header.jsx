@@ -1,14 +1,15 @@
 import React from "react";
 import Logo from  '../assets/img/logo.svg';
-// import { Link } from "react-router-dom";
+
 const Header = () => {
    
     const checkUrl = () =>{
-       if(window.location.pathname !== '/'){
-           return 'not-index'
-       }
+
+        if (typeof window !== "undefined" && window.location.pathname !== '/') {
+            return 'not-index';
+          }
     }
-    const isCreatingJob =  window.location.pathname.includes("create")
+    const isCreatingJob =  typeof window !== "undefined" && window.location.pathname.includes("create")
     
     return (
         <header className={checkUrl()}>

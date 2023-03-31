@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import { useForm, Controller} from "react-hook-form";
-import { useNavigate } from 'react-router-dom'
 import {useDropzone} from 'react-dropzone'
 import RichEditor from "../utils/RichEditor"
 import DragAndDropLogo from "../utils/DragAndDropLogo"

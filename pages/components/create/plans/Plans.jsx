@@ -1,8 +1,7 @@
 import React, {useState} from "react";
-// import { Link } from "react-router-dom";
 
-import ImageT2Plan from '../../../assets/img/plans/t2.png'
-import ImageT3Plan from '../../../assets/img/plans/t3.png'
+import ImageT2Plan from '../../../assets/img/plans/t2.png';
+import ImageT3Plan from '../../../assets/img/plans/t3.png';
 
 import iconSuccess from '../../../assets/img/icons/icon-success.svg';
 import iconSuccessGrey from '../../../assets/img/icons/icon-success-grey.svg';
