@@ -10,10 +10,10 @@ import Job from "../../pages/Job";
 import Company from "../../pages/Company";
 // import Form from "./payment/Payment";
 
-const Create = () => {
+const Create = (props) => {
     const router = useRouter();
     const [formData, setFormData] = useState({});  
-    const [currentStep, setCurrentStep] = useState(1); 
+    const [currentStep, setCurrentStep] = useState(props.selectedCurrentStep || 1); 
 
     // Prompt user before leaving - preserve state
     if(typeof window !== "undefined"){
@@ -81,7 +81,7 @@ const Create = () => {
             router.push('/create/preview');
         }else{
             setCurrentStep(step + 1)        
-            router.push('/create');        
+            router.push(mapSteps[step + 1].url);        
         }
         
     }
