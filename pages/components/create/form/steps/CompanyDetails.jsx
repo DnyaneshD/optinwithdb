@@ -1,12 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import { useForm, Controller} from "react-hook-form";
-import {useDropzone} from 'react-dropzone'
 import RichEditor from "../utils/RichEditor"
 import DragAndDropLogo from "../utils/DragAndDropLogo"
 const CompanyDetails = (props) => {
 
-
-    const navigate = useNavigate();
     // Retrieve data from either session storage or state
     const valuesDerivedFromState = props.parentState;    
     

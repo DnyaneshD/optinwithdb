@@ -11,12 +11,12 @@ const Editor = dynamic(
 
 const RichEditor = props => {
 
-    const value = props.data ? props.data : ''    
+  const value = props.data ? props.data : '';    
     const [editorState, setEditorState] = useState(() => {
-      const contentState =  ContentState.createFromBlockArray(
-        convertFromHTML(value)
-      )  
-      return EditorState.createWithContent(contentState)
+      const contentState = typeof window !== "undefined" && ContentState.createFromBlockArray(
+         convertFromHTML(value)
+      )
+      return typeof contentState.getBlockMap === "function" &&  EditorState.createWithContent(contentState)
     }
   )
 

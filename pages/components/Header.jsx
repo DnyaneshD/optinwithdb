@@ -1,15 +1,18 @@
 import React from "react";
 import Logo from  '../assets/img/logo.svg';
+import { useRouter } from 'next/router';
 
 const Header = () => {
+
+    const router = useRouter();
    
     const checkUrl = () =>{
 
-        if (typeof window !== "undefined" && window.location.pathname !== '/') {
+        if (typeof router.pathname !== '/') {
             return 'not-index';
           }
     }
-    const isCreatingJob =  typeof window !== "undefined" && window.location.pathname.includes("create")
+    const isCreatingJob = router.pathname.includes("create")
     
     return (
         <header className={checkUrl()}>
@@ -21,7 +24,7 @@ const Header = () => {
                         <li><a href="/employers">For Employers</a></li>
                     </ul>
                 </nav>
-                {!isCreatingJob && <a href="/create" className="cta main-cta">Post a job for FREE</a>}                
+                {!isCreatingJob && <a href="/create" className="cta main-cta">Post a job for FREE</a>}                 
             </div>
         </header>
     )

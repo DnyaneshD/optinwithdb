@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-// import { useNavigate } from 'react-router-dom'
 
 // Load components
 import JobDetails from "./steps/JobDetails";
@@ -9,7 +8,6 @@ import SummaryWidget from "./sidebar/SummaryWidget";
 
 const Form = (props) => {
     
-    let navigate = useNavigate();
     const formData = props.formData
     const step = props.currentStep
 

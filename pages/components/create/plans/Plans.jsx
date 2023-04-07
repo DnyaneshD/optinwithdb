@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 
-import ImageT2Plan from '../../../assets/img/plans/t2.png';
-import ImageT3Plan from '../../../assets/img/plans/t3.png';
-
 import iconSuccess from '../../../assets/img/icons/icon-success.svg';
 import iconSuccessGrey from '../../../assets/img/icons/icon-success-grey.svg';
 
@@ -21,13 +18,13 @@ const Plans = (props) => {
 
     return (
     <>
-        {/* <section className="banner">
+        <section className="banner">
             <div className="wrap">
                 <img src={iconSuccess} alt="Success" />
                 <h2>Succesful submission, thank you!</h2>
                 <p>We will shortly review it and get it published. Once its live, we will let you know per email.</p>
             </div>
-        </section> */}
+        </section>
         <section className="plans">
             <div className="wrap">
                 <div className="heading">
@@ -63,7 +60,7 @@ const Plans = (props) => {
                         <div className="showcase plan-tier-2">
                             <p>Here's how it looks:</p>
                             <div className="img-bg">
-                                <img src={ImageT2Plan} alt="Tier 2 - Highlighted" />
+                                <img src="../../../assets/img/plans/t2.png" alt="Tier 2 - Highlighted" />
                             </div>
                         </div>
                     </li>
@@ -103,7 +100,7 @@ const Plans = (props) => {
                         <div className="showcase plan-tier-3">
                             <p>Here's how it looks:</p>
                             <div className="img-bg">
-                                <img src={ImageT3Plan} alt="Tier 3 - Featured" />
+                                <img src="../../../assets/img/plans/t3.png" alt="Tier 3 - Featured" />
                             </div>
                         </div>
                     </li>
@@ -147,7 +144,7 @@ const Plans = (props) => {
                         <div className="showcase plan-tier-1">
                             <p>Here's how it looks:</p>
                             <div className="img-bg founder-level-one">
-                                <img src={ImageT3Plan} alt="Tier 1 - Normal" />
+                                <img src="../../../assets/img/plans/t3.png" alt="Tier 1 - Normal" />
                             </div>
                         </div>
                     </li>

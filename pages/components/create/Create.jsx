@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react"
-// import { useNavigate } from 'react-router-dom'
+import React, {useEffect, useState} from "react";
+import { useRouter } from 'next/router';
 
 // import { api } from "../../utils/api";
 
@@ -11,20 +11,22 @@ import Company from "../../pages/Company";
 // import Form from "./payment/Payment";
 
 const Create = () => {
-    const navigate = useNavigate();
+    const router = useRouter();
     const [formData, setFormData] = useState({});  
     const [currentStep, setCurrentStep] = useState(1); 
 
     // Prompt user before leaving - preserve state
-    window.onbeforeunload = (event) => {
-        const e = event || window.event;
-        // Cancel the event
-        e.preventDefault();
-        if (e) {
-          e.returnValue = ''; 
-        }
-        return ''; 
-    };
+    if(typeof window !== "undefined"){
+        window.onbeforeunload = (event) => {
+            const e = event || window.event;
+            // Cancel the event
+            e.preventDefault();
+            if (e) {
+            e.returnValue = ''; 
+            }
+            return ''; 
+        };
+    }
 
     // Restrict Step2 if Step1 data is missing
     const overrideStepBasedOnUrl = () =>{
@@ -47,21 +49,21 @@ const Create = () => {
         }
         if(isUrlPlans && currentStep < 3){            
             if(!formData[2]){
-                navigate('/create/company-details');
+               router.push('/create/company-details');
             }
         }
         if(isUrlCompanyDetails && currentStep < 2){            
             if(!formData[1]){
-                navigate('/create');
+                router.push('/create');
             }
         }
         if(isUrlPreview && !formData[1] && !formData[2]){
-            navigate('/create');
+            router.push('/create');
         }else if(isUrlPreview){
             setCurrentStep(5);
         }
         if(isUrlPreviewCompany && !formData[2]){
-            navigate('/create')
+           router.push('/create');
         }else if(isUrlPreviewCompany){
             setCurrentStep(6)
         }
@@ -76,10 +78,10 @@ const Create = () => {
         const newDataObj = formData
         newDataObj[step] = data
         if(submitter){
-            navigate('/create/preview');
+            router.push('/create/preview');
         }else{
             setCurrentStep(step + 1)        
-            navigate(mapSteps[step + 1].url)        
+            router.push('/create');        
         }
         
     }

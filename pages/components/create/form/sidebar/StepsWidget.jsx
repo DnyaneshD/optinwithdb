@@ -1,11 +1,13 @@
-import React, {useEffect} from "react";
+import React from "react";
+import { useRouter } from 'next/router'
 
 
 
 const StepsWidget = () => {
 
+    const router = useRouter();
 
-    const urlPathName = window.location.pathname;
+    const urlPathName = router.pathname;
     const urlIsCompanyDetails = urlPathName.includes("company-details")
     const urlIsPayment = urlPathName.includes("payment")
 
