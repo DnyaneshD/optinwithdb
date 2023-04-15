@@ -36,6 +36,8 @@ const Listing = (props) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null)
 
+    console.log(" props movies  ---> ", props);
+
     // Handle State
     useEffect(() => {
         setLoading(true)

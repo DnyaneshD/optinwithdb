@@ -1,29 +1,36 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { getMovies } from "../../../lib/mongo/movies";
+import { getMovies, postMovies } from "../../../lib/mongo/movies";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
+  console.log(" req details ", req.method);
 
-    console.log(" req details ", req.method)
+  if (req.method === "GET") {
+    console.log(" inside GET req");
 
-  if(req.method === "GET"){
+    try {
+      const { movies, error } = await getMovies();
 
-    console.log(" inside req")
+      if (error) throw new Error(error);
 
-        try {
-
-            const { movies, error } = await getMovies();
-
-            if(error) throw new Error(error);
-
-            return res.status(200).json({ movies });
-            
-        } catch (error: any) {
-            return res.status(500).json({ error: error.message })
-        }
+      return res.status(200).json({ movies });
+    } catch (error: any) {
+      return res.status(500).json({ error: error.message });
     }
+  } else if (req.method === "POST") {
+    try {
+      console.log(" inside POST req");
 
-    res.setHeader('Allow', ['GET']);
-    res.status(425).end('Method GET not allowed');
-}
+      const jobDetails = req.body.data;
+
+      const { movies, error } = await postMovies(jobDetails);
+
+      return res.status(201).json({ movies });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  res.setHeader("Allow", ["GET", "POST"]);
+  res.status(425).end("Method GET and POST allowed");
+};
 
 export default handler;

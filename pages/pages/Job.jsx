@@ -28,9 +28,6 @@ const Job = (props) => {
     
     const isPreviewMode = props.data && Object.keys(props.data).length > 1
 
-    
-   
-
     // Handle State
     useEffect(() => {
         setLoading(true)
