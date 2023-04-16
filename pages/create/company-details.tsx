@@ -1,3 +1,5 @@
 import CreateComponent from "./../components/create/Create";
 
-export default () => <CreateComponent selectedCurrentStep={2} />;
+export default function CompanyDetails() {
+  return <CreateComponent selectedCurrentStep={2} />;
+}

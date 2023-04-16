@@ -1,3 +1,5 @@
 import Plans from "../components/create/plans/Plans";
 
-export default () => <Plans />
+export default function PlansComponent() {
+  return <Plans />;
+}

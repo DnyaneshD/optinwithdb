@@ -1,3 +1,5 @@
 import CreateComponent from "./components/create/Create";
 
-export default () => <CreateComponent />;
+export default function create() {
+  return <CreateComponent />;
+}
