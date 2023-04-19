@@ -10,7 +10,8 @@ import iconTime from "../assets/img/icons/icon-time.svg";
 import iconSalary from "../assets/img/icons/icon-salary.svg";
 
 import iconLinkedin from "../assets/img/icons/icon-linkedin-dark.svg";
-import iconFacebook from "../assets/img/icons/icon-facebook-dark.svg";
+// Fix me
+// import iconFacebook from "../assets/img/icons/icon-facebook-dark.svg";
 import iconTwitter from "../assets/img/icons/icon-twitter-dark.svg";
 
 // temp - remove later
@@ -21,8 +22,8 @@ import JobListingLoader from "../components/loaders/JobListingLoader";
 import JobListingCompanyDetails from "../components/loaders/JobListingCompanyDetails";
 
 const Job = (props) => {
-  const navigate = useNavigate();
-  const params = useParams();
+  // const navigate = useNavigate();
+  // const params = useParams();
   const [loading, setLoading] = useState(true);
   const [jobData, setJobData] = useState(null);
 
@@ -35,20 +36,20 @@ const Job = (props) => {
     // Check if props data is empty == disable preview mode
     if (!isPreviewMode) {
       if (params && params.jobId) {
-        api
-          .fetchJobDetails(params.jobId)
-          .then((resp) => {
-            setJobData(resp);
-            console.log(resp);
-            setLoading(false);
-            sortDateVisually(resp.date);
-          })
-          .catch((e) => {
-            console.warn(e);
-            navigate("/");
-          });
+        // api
+        //   .fetchJobDetails(params.jobId)
+        //   .then((resp) => {
+        //     setJobData(resp);
+        //     console.log(resp);
+        //     setLoading(false);
+        //     sortDateVisually(resp.date);
+        //   })
+        //   .catch((e) => {
+        //     console.warn(e);
+        //     // navigate("/");
+        //   });
       } else {
-        navigate("/");
+        // navigate("/");
       }
     } else {
       let formData = props.data;
@@ -189,9 +190,9 @@ const Job = (props) => {
               <a href="#">
                 <img src={iconLinkedin} alt="Linkedin" />
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={iconFacebook} alt="Facebook" />
-              </a>
+              </a> */}
               <a href="#">
                 <img src={iconTwitter} alt="Twitter" />
               </a>

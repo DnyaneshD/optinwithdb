@@ -53,9 +53,9 @@ const Footer = () => {
             <a href="#">
               <img src={iconLinkedin} alt="Linkedin" />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <img src={iconFacebook} alt="Facebook" />
-            </a>
+            </a> */}
             <a href="#">
               <img src={iconTwitter} alt="Twitter" />
             </a>
