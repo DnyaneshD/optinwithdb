@@ -9,7 +9,7 @@ import Create from "./create/Create.jsx";
 
 // import '../assets/css/global.css';
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
