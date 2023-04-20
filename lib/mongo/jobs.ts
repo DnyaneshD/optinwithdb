@@ -2,7 +2,7 @@ import clientPromise from "./index";
 
 let client;
 let db: any = null;
-let movies: any;
+let jobs: any;
 
 async function init() {
   if (db) return;
@@ -11,7 +11,7 @@ async function init() {
     client = await clientPromise;
     db = client && (await client.db());
 
-    movies = await db.collection("jobs");
+    jobs = await db.collection("jobs");
   } catch (e) {
     console.log(" Error while init ", e);
   }
@@ -21,15 +21,17 @@ async () => {
   await init();
 };
 
-export async function getMovies() {
+export async function getJobs() {
   try {
-    if (!movies) await init();
+    if (!jobs) await init();
 
-    const result = await movies
+    const result = await jobs
       .find({})
       .limit(20)
       .map((movie: any) => ({ ...movie, _id: movie._id.toString() }))
       .toArray();
+
+    console.log(" *******************  ", result);
 
     return { movies: result };
   } catch (error) {
@@ -42,11 +44,11 @@ export async function postMovies(formData: any) {
   console.log(" formData ---> ", formData);
 
   try {
-    if (!movies) await init();
+    if (!jobs) await init();
 
-    console.log(" ******************* save **************", movies);
+    console.log(" ******************* save **************", jobs);
 
-    const result = await movies.insertOne(formData);
+    const result = await jobs.insertOne(formData);
     return { movies: result };
   } catch (error) {
     console.log(error);

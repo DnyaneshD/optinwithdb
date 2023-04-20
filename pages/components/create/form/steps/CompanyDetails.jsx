@@ -7,17 +7,12 @@ const CompanyDetails = (props) => {
   const valuesDerivedFromState = props.parentState;
 
   const {
-    watch,
     register,
     handleSubmit,
     control,
     formState: { errors },
   } = useForm({
     defaultValues: valuesDerivedFromState,
-  });
-
-  watch((e) => {
-    console.log(e);
   });
 
   const onSubmit = (data, e) => {

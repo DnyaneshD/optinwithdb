@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { getMovies, postMovies } from "../../../lib/mongo/movies";
+import { getJobs, postMovies } from "../../../lib/mongo/jobs";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
   console.log(" req details ", req.method);
@@ -8,7 +8,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     console.log(" inside GET req");
 
     try {
-      const { movies, error } = await getMovies();
+      const { movies, error } = await getJobs();
 
       if (error) throw new Error(error);
 

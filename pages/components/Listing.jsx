@@ -57,21 +57,6 @@ const Listing = (props) => {
 
   console.log(" props movies  ---> ", props);
 
-  // Handle State
-  useEffect(() => {
-    setLoading(true);
-    // api.fecthJobList().then(resp => {
-    //     setJobList(resp);
-    //     setError(null);
-    //     sortDateVisually(resp.date);
-    //     setLoading(false);
-    // }).catch(e => {
-    //     console.warn(e);
-    // })
-  }, []);
-
-  console.log("asdasdsdsd -- >", jobList);
-
   return (
     <section className="listing">
       <div className="wrap">
@@ -84,13 +69,16 @@ const Listing = (props) => {
             </p>
           )}
           <ul>
-            {jobList?.map((job) => {
+            {props.jobs?.map((job) => {
+              console.log(" job ---> ", job);
               return (
                 <li className="featured" key={job.jobId}>
-                  <Link to={`job/${job.jobId}`}>
-                    <div className="company-logo">
-                      <img src={job.companyLogo.base64} alt="#" />
-                    </div>
+                  <Link href={`job`}>
+                    {job.companyLogo && (
+                      <div className="company-logo">
+                        <img src={job.companyLogo.base64} alt="#" />
+                      </div>
+                    )}
                     <div className="job-description">
                       <p>{job.companyName}</p>
                       <h3>{job.jobTitle}</h3>

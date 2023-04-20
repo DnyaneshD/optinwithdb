@@ -7,23 +7,30 @@ import imageHero from "./assets/img/sections/hero.svg";
 import imageWaveHero from "./assets/img/sections/wave-hero.svg";
 import iconFounderCrown from "./assets/img/icons/founder-crown.svg";
 import Header from "./components/Header";
-import { getMovies } from "../lib/mongo/movies";
+import { getJobs } from "../lib/mongo/jobs";
 
 export async function getServerSideProps() {
-  const { movies } = await getMovies();
+  const { movies: jobs } = await getJobs();
 
-  if (!movies) throw new Error("Failed to get movies");
+  if (!jobs) throw new Error("Failed to get jobs");
   return {
     props: {
-      movies: movies.map((m: any) => {
-        return { _id: m._id, title: m.jobTitle };
+      jobs: jobs.map((job: any) => {
+        return {
+          jobId: job._id,
+          jobTitle: job.jobTitle,
+          companyName: job.company.name,
+          jobType: job.jobType,
+          salaryRange: "",
+          companyLogo: job.company.logo,
+        };
       }),
     },
   };
 }
 
-const Home = ({ movies }: any) => {
-  console.log(" movies ---> ", movies);
+const Home = ({ jobs }: any) => {
+  console.log(" jobs ---> ", jobs);
 
   return (
     <React.Fragment>
@@ -48,7 +55,7 @@ const Home = ({ movies }: any) => {
         </div>
         <img className="waves" src={imageWaveHero} alt="bg" />
       </section>
-      <Listing showFilter="1" />
+      <Listing jobs={jobs} showFilter="1" />
       <Cta />
     </React.Fragment>
   );
